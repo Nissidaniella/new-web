@@ -18,7 +18,23 @@
       <div class="content">
         <h2>Ready To <span>Race</span></h2>
         <a href="#" class="btn">Ride Now</a>
-        <img src="bike.png" class="bike" />
+
+        <div class="bike">
+          <div class="bikes active" style="margin-top: 40px;">
+            <img src="bike.png" class="bike"/>
+          </div>
+         
+          <div class="bikes" style="margin-top: 10px;">
+            <img src="c22.png" class="bike" />
+          </div>
+       
+
+          <div class="bikes" style="margin-top: 25px;">
+            <img src="c33.png" class="bike" />
+          </div>
+        
+        </div>
+        
       </div>
 
       <!-- <slider content> -->
@@ -72,6 +88,7 @@
     <script>
       const slides = document.querySelectorAll(".slides");
       const dots = document.querySelectorAll(".dot");
+      const bikes = document.querySelectorAll(".bikes");
 
       function setActive(i) {
         for (slide of slides) slide.classList.remove("active");
@@ -79,6 +96,9 @@
 
         for (dot of dots) dot.classList.remove("active");
         dots[i].classList.add("active");
+
+        for(bike of bikes)bike.classList.remove("active");
+        bikes[i].classList.add("active");
       }
 
       for(let j =0; j<dots.length; j++) {
