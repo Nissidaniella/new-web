@@ -110,7 +110,7 @@ header {
     position: absolute;
     margin-top: 20px;
     opacity: 0;
-    transition: 0.25s;
+    transition: 1.25s;
 }
 
 .bike .bikes.active{
@@ -177,7 +177,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 0 100px;
-    transition: 0.25s;
+    transition: 1.25s;
     opacity: 0;
     pointer-events: none;
 }
