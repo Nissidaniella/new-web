@@ -5,21 +5,42 @@
     <link rel="stylesheet" type="text/css" href="new.css" />
   </head>
   <body>
+    <center>
     <section class="main">
       <header>
-        <a href="#"> <img src="logo.png" class="logo" /></a>
-        <ul class="navigation">
-          <li><a href="#">Top Features</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">Store</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+         <h4 style="margin-left: 50px;">Good Morning</h4>
+         <p style="margin-left: 20px;"> 11 dec</p>
+        <div style="display:flex; margin-left: 1060px;">
+          <li style="margin-right: 10px;">ᾅ</li>
+          <li  style="margin-right: 20px;">11:10</li>
+          <li>67•</li>
+        </div>
+          
+          
+       
       </header>
-      <div class="content">
-        <h2>Ready To <span>Race</span></h2>
-        <a href="#" class="btn">Ride Now</a>
-        <img src="bike.png" class="bike" />
-      </div>
+
+        <div class="gamer">
+          <div class="gamers active">
+            <img src="1.png" class="gamer one"/>
+          </div>
+         
+          <div class="gamers">
+            <img src="2.png" class="gamer two"/>
+            <img src="1.png" class="gamer two2"/>
+          </div>
+       
+
+          <div class="gamers">
+            <img src="3.png" class="gamer"/>
+          </div>
+        
+          <div class="gamers">
+            <img src="4.png" class="gamer"/>
+          </div>
+        </div>
+        
+      
 
       <!-- <slider content> -->
       <div class="slider">
@@ -31,6 +52,11 @@
         <div class="slides">
           <h2><span>Milage</span><br />14 Kmpl</h2>
           <h2><span>0-100 Kmph</span><br />4 Seconds</h2>
+        </div>
+
+        <div class="slides">
+          <h2><span>Wheels</span><br />17-Inch Alloy</h2>
+          <h2><span>Tyre Type</span><br />Tubeless</h2>
         </div>
 
         <div class="slides">
@@ -57,6 +83,7 @@
           <span class="dot active"></span>
           <span class="dot"></span>
           <span class="dot"></span>
+          <span class="dot"></span>
         </div>
       </div>
     </section>
@@ -72,6 +99,7 @@
     <script>
       const slides = document.querySelectorAll(".slides");
       const dots = document.querySelectorAll(".dot");
+      const gamers = document.querySelectorAll(".gamers");
 
       function setActive(i) {
         for (slide of slides) slide.classList.remove("active");
@@ -79,6 +107,9 @@
 
         for (dot of dots) dot.classList.remove("active");
         dots[i].classList.add("active");
+
+        for(gamer of gamers)gamer.classList.remove("active");
+        gamers[i].classList.add("active");
       }
 
       for(let j =0; j<dots.length; j++) {

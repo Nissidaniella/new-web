@@ -5,87 +5,50 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Ubuntu", sans-serif;
+ 
 }
+
 :root {
   --black: #2f2f2f;
   --white: #fff;
   --red: #f83038;
 }
+
+body{
+    background-color: aqua;
+}
 .main {
   position: relative;
-  min-height: 100vh;
-  background: linear-gradient(#1c1c1c, #323232);
+  min-height: 95vh;
+  width: 180vh;
+  height: 70px;
+  background-image: url(ux.png);
+  background-size: cover;
   padding: 30px 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  top: 25px;
+  border-radius: 50px;
+  color: #fff9f9;
+  
 }
 
-.main::before {
-  content: "Adventure";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 16vw;
-  font-weight: 700;
-  color: rgb(255, 255, 255, 0.05);
-}
+
+
+
 
 header {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  padding: 30px 100px;
+  /* width: 100%; */
+  padding: 30px 10px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  max-width: 80px;
-}
-
-.navigation {
-  display: flex;
-}
-
-.navigation li {
+  align-items: right;
   list-style: none;
-}
-
-.navigation li a {
-  position: relative;
-  color: var(--white);
-  margin-left: 40px;
-  text-decoration: none;
-  transform: 0.25s;
-}
-
-.navigation li a:hover {
-  color: var(--red);
-}
-.content {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 100px;
-    z-index: 1;
-}
-
-.content h2 {
-    font-size: 5em;
-    font-weight: 300;
-    color: var(--white);
-    text-align: center;
-}
-
-.content h2 span {
-    font-weight: 700;
 }
 
 .btn{
@@ -104,9 +67,20 @@ header {
     letter-spacing: 4px;
 }
 
-.bike{
-    max-width: 80%;
+.gamer .gamers{
+   /* max-width: 90%; */
+    /* margin-left: -500px; */
+    position: absolute;
+    /* margin-top: 20px; */
+    opacity: 0;
+    transition: 0.25s;
 }
+
+.gamer .gamers.active{
+  opacity: 1;
+  /* top: 40%; */
+  }
+
 
 .footer{
     position: absolute;
@@ -189,5 +163,10 @@ top: 50%;
     font-size:0.5em ;
     font-weight: 400;
     font-style: italic;
+}
+
+.one{
+    margin-top:-70px;
+    margin-left: 180px;
 }
 
